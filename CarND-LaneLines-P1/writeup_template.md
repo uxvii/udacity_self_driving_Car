@@ -1,47 +1,38 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
-
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
-
----
-
-**Finding Lane Lines on the Road**
-
-The goals / steps of this project are the following:
-* Make a pipeline that finds lane lines on the road
-* Reflect on your work in a written report
-
-
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
-
----
 
 ### Reflection
 
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### 1. the steps of drawing  unique pipelines on the left and right side
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+1. read the image and convert it from rgb to hsv color space
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+2. select the v tunnel of the image, apply gaussian blur
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+3. apply canny algorithm to detect edges
 
-![alt text][image1]
+4. apply "get_roi" function to get the region of interest
+ 
+5. apply hough algorithm to find all the lines within the roi
+
+6. filter all the lines with their slope. The remaining lines on the left are those whose slope between 0.5 and 2, the right side line ,between -0.5 and -2.
+
+7. average the slope k and the y intercept b of lines on the right and left
+
+8. draw the two lines with the averaged parameter of k and b 
+    
+	
 
 
-### 2. Identify potential shortcomings with your current pipeline
+### 2. potential shortcomings of my current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming would be what would happen when the lane is kurved
 
-Another shortcoming could be ...
+Another shortcoming could be when the car does not run in the middle of the two pipelines
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
+A possible improvement would be to change the line-fitting to kurve-fitting using polynom
 
-Another potential improvement could be to ...
