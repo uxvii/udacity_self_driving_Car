@@ -21,9 +21,9 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a histogramm showing how the data distribute
 
-![avatar][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/histogramm_test_Set.png.png]
-![avatar][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/histogramm_training_Set.png]
-![avatar][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/histogramm_validation_Set.png.png]
+![Aaron Swartz][https://raw.githubusercontent.com/uxvii/udacity_self_driving_Car/master/CarND-Traffic-Sign-Classifier-P2/histogramm_test_Set.png.png]
+![Aaron Swartz][https://raw.githubusercontent.com/uxvii/udacity_self_driving_Car/master/CarND-Traffic-Sign-Classifier-P2/histogramm_training_Set.png]
+![Aaron Swartz][https://raw.githubusercontent.com/uxvii/udacity_self_driving_Car/master/CarND-Traffic-Sign-Classifier-P2/histogramm_validation_Set.png]
 
 
 ### Design and Test a Model Architecture
@@ -94,8 +94,8 @@ If an iterative approach was chosen:
 
 Here are five German traffic signs that I found on the web:
 
-![alt text][1.jpeg] ![alt text][3.jpeg] ![alt text][9.jpeg] 
-![alt text][14.jpeg] ![alt text][22.jpeg]
+![Aaron Swartz][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/1.jpeg] ![Aaron Swartz][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/3.jpeg] ![Aaron Swartz][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/9.jpeg] 
+![Aaron Swartz][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/14.jpeg] ![Aaron Swartz][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/22.jpeg]
 
 The 1st 3rd image might be difficult to classify because the area of the sign is small compared to the whole area of the whole pic. And the background of the pictures may be different from the pics in the training set. this may maybe the reason why they are not correctly predictet
 
@@ -128,16 +128,19 @@ The code for making predictions on my final model is located in the 11th cell of
 |2nd picture   |label 1   |
 |predicted label  |  0, 17,  1,  3, 20|
 |probabilities| 0.9,   2.05e-02,   3.9e-03, 1.1e-04,   9.7e-05|
+
 |      		|    	        					| 
 |:---------------------:|:---------------------------------------------:| 
 |3rd picture   |label 3   |
 |predicted label  | 38, 10,  9, 12, 40|
 |probabilities|  0.6,   0.2,   0.15, 1.12e-03,   9.7e-04|
+
 |      		|    	        					| 
 |:---------------------:|:---------------------------------------------:| 
 |4th picture   |label 9   |
 |predicted label  | 18, 26, 12, 11,  1|
 |probabilities|0.9,   5.32e-03,   1.04e-03, 2.4e-05,   2.8e-07|
+
 |      		|    	        					| 
 |:---------------------:|:---------------------------------------------:| 
 |5th picture   |label 22  | 
