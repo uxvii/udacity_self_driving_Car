@@ -118,7 +118,7 @@ The model was able to correctly guess 1 of the 6 traffic signs, which gives an a
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
 |1st picture   |label 14    |
-|predicted label  |[14, 15,  5, 25,  2]|
+predicted label  |[14, 15,  5, 25,  2]
 |probabilities |[  0.99,   5.e-04,   2.3e-05, 4.6e-06, 9.5e-08]|
 
 
