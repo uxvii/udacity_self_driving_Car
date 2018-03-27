@@ -117,7 +117,7 @@ The model was able to correctly guess 1 of the 6 traffic signs, which gives an a
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-|       		|    	        					| 
+
 |:---------------------:|:---------------------------------------------:| 
 |1st picture   |label 14   |
 |predicted label  |14, 15,  5, 25,  2|
@@ -125,29 +125,23 @@ The code for making predictions on my final model is located in the 11th cell of
 
 
 |2nd picture   |label 1   |
-|predicted label  | [ 0, 17,  1,  3, 20]|
-|probabilities|[ 0.9,   2.05e-02,   3.9e-03, 1.1e-04,   9.7e-05]|
+|predicted label  |  0, 17,  1,  3, 20|
+|probabilities| 0.9,   2.05e-02,   3.9e-03, 1.1e-04,   9.7e-05|
 
 |3rd picture   |label 3   |
-|predicted label  | [38, 10,  9, 12, 40]|
-|probabilities|[  0.6,   0.2,   0.15, 1.12e-03,   9.7e-04]|
+|predicted label  | 38, 10,  9, 12, 40|
+|probabilities|  0.6,   0.2,   0.15, 1.12e-03,   9.7e-04|
 
-4th picture   |label 9   
-predicted label  | prediction wrong
-[18, 26, 12, 11,  1]
-probabilities
-[  0.9,   5.32e-03,   1.04e-03, 2.4e-05,   2.8e-07]
+|4th picture   |label 9   |
+|predicted label  | [18, 26, 12, 11,  1]|
+|probabilities|0.9,   5.32e-03,   1.04e-03, 2.4e-05,   2.8e-07|
 
-5th picture   |label 22   
-predicted label  | prediction wrong
-[28, 29, 22,  8,  3]
-probabilities
-[ 0.9,   9.34e-02,   1.7e-09, 1.39e-09,   8.1e-13]
+|5th picture   |label 22  | 
+|predicted label  | 28, 29, 22,  8,  3|
+|probabilities| 0.9,   9.34e-02,   1.7e-09, 1.39e-09,   8.1e-13|
 
 
-6th picture   |label 38  
-predicted label  | prediction wrong
-[13, 38, 34, 30, 33]
-probabilities
-[0.9,   3.07e-03,   9.8e-06, 3.4e-08,   6.6e-12]
+|6th picture   |label 38 | 
+|predicted label  | 13, 38, 34, 30, 33|
+|probabilities|0.9,   3.07e-03,   9.8e-06, 3.4e-08,   6.6e-12|
 
