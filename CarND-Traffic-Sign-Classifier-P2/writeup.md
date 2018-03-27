@@ -23,7 +23,7 @@ Here is an exploratory visualization of the data set. It is a histogramm showing
 
 ![avatar][https://raw.githubusercontent.com/uxvii/udacity_self_driving_Car/master/CarND-Traffic-Sign-Classifier-P2/histogramm_test_Set.png.png]
 ![Aaron Swartz][https://raw.githubusercontent.com/uxvii/udacity_self_driving_Car/master/CarND-Traffic-Sign-Classifier-P2/histogramm_training_Set.png]
-![Aaron Swartz][https://raw.githubusercontent.com/uxvii/udacity_self_driving_Car/master/CarND-Traffic-Sign-Classifier-P2/histogramm_validation_Set.png]
+![Aaron Swartz][https://raw.githubusercontent.com/uxvii/udacity_self_driving_Car/master/CarND-Traffic-Sign-Classifier-P2/histogramm_validation_Set.png.png]
 
 
 ### Design and Test a Model Architecture
@@ -95,7 +95,7 @@ If an iterative approach was chosen:
 Here are five German traffic signs that I found on the web:
 
 ![Aaron Swartz][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/1.jpeg] ![Aaron Swartz][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/3.jpeg] ![Aaron Swartz][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/9.jpeg] 
-![Aaron Swartz][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/14.jpeg] ![Aaron Swartz][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/22.jpeg]
+![Aaron Swartz][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/14.jpeg] ![Aaron Swartz][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/22.jpg]
 
 The 1st 3rd image might be difficult to classify because the area of the sign is small compared to the whole area of the whole pic. And the background of the pictures may be different from the pics in the training set. this may maybe the reason why they are not correctly predictet
 
