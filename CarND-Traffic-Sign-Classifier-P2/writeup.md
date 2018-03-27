@@ -21,9 +21,9 @@ signs data set:
 
 Here is an exploratory visualization of the data set. It is a histogramm showing how the data distribute
 
-![alt text][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/histogramm_test_Set.png.png]
-![alt text][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/histogramm_training_Set.png]
-![alt text][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/histogramm_validation_Set.png.png]
+![avatar][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/histogramm_test_Set.png.png]
+![avatar][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/histogramm_training_Set.png]
+![avatar][https://github.com/uxvii/udacity_self_driving_Car/blob/master/CarND-Traffic-Sign-Classifier-P2/histogramm_validation_Set.png.png]
 
 
 ### Design and Test a Model Architecture
