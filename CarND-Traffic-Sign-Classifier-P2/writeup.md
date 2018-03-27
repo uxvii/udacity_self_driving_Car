@@ -106,11 +106,10 @@ Here are the results of the prediction:
 | Image			        |     Prediction	        					| 
 |:---------------------:|:---------------------------------------------:| 
 | label=14      		| label=14  									| 
-| label=1     			| label=0 										|
-| label=3			|label=38 											|
-| label=9	      		| label=18 					 				|
+| label=1     			| label=0 |
+| label=3			|label=38 	|									
+| label=9	      		| label=18 	|
 | label=22		        | label=28      	   	|
-
 | label=38	                | label=13    	   	   |
 
 The model was able to correctly guess 1 of the 6 traffic signs, which gives an accuracy of 16.7%. this is quite bad prediction
@@ -118,24 +117,18 @@ The model was able to correctly guess 1 of the 6 traffic signs, which gives an a
 #### 3. Describe how certain the model is when predicting on each of the five new images by looking at the softmax probabilities for each prediction. Provide the top 5 softmax probabilities for each image along with the sign type of each probability. 
 The code for making predictions on my final model is located in the 11th cell of the Ipython notebook.
 
-1st picture   |label 14    
-predicted label  | prediction correct
-[14, 15,  5, 25,  2]
-probabilities
-[  0.99,   5.e-04,   2.3e-05, 4.6e-06, 9.5e-08]
+|1st picture   |label 14    |
+|predicted label  |[14, 15,  5, 25,  2]|
+|probabilities |[  0.99,   5.e-04,   2.3e-05, 4.6e-06, 9.5e-08]|
 
 
-2nd picture   |label 1   
-predicted label  | prediction wrong
-[ 0, 17,  1,  3, 20]
-probabilities
-[ 0.9,   2.05e-02,   3.9e-03, 1.1e-04,   9.7e-05]
+|2nd picture   |label 1   |
+|predicted label  | [ 0, 17,  1,  3, 20]|
+|probabilities|[ 0.9,   2.05e-02,   3.9e-03, 1.1e-04,   9.7e-05]|
 
-3rd picture   |label 3   
-predicted label  | prediction wrong
-[38, 10,  9, 12, 40]
-probabilities
-[  0.6,   0.2,   0.15, 1.12e-03,   9.7e-04]
+|3rd picture   |label 3   |
+|predicted label  | [38, 10,  9, 12, 40]|
+|probabilities|[  0.6,   0.2,   0.15, 1.12e-03,   9.7e-04]|
 
 4th picture   |label 9   
 predicted label  | prediction wrong
