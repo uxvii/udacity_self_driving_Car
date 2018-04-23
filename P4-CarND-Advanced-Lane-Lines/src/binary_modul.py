@@ -5,18 +5,20 @@ import matplotlib.image as mpimg
 import pickle
 
 
-#hue mask
-def hue_mask(img):
-	from global_var import hue_low as l
-	from global_var import hue_high as h
+# rgb thresholding for white (best)
+def rgb_white(image):
+
+	lower = np.array([100,100,200])
+	upper = np.array([255, 255, 255])
+	mask = cv2.inRange(image, lower, upper)
+	rgb_w = cv2.bitwise_and(image, image, mask = mask).astype(np.uint8)#the white region in the original pic
+	rgb_w = cv2.cvtColor(rgb_w, cv2.COLOR_RGB2GRAY)#white to grey
+
 	
-	hls = cv2.cvtColor(img, cv2.COLOR_RGB2HLS)
-	h_channel = hls[:,:,0]
+	binary = np.zeros_like(rgb_w)
+	binary[(rgb_w >= 20) & (rgb_w <= 255)] = 1 #in the grey img, the white pixel tend to be 255
 
-	h_binary = np.zeros_like(h_channel)
-	h_binary[(h_channel >= l) & (h_channel <= h)] = 1
-
-	return h_binary #the map with either 0/1
+	return binary #the map with either 0/1
 	
 #hls   s  channel
 def binary_s_channel(img):
@@ -56,25 +58,45 @@ def binary_gradient(img):
 
 	
 def binary_combined(img):
-	h_binary=hue_mask(img)
-	s_binary=binary_s_channel(img)
-	sxbinary=binary_gradient(img)
-	combined=np.zeros_like(s_binary)
-	combined[((s_binary==1)|(sxbinary==1))&(h_binary==1)]=255
+	w=rgb_white(img)
+	s=binary_s_channel(img)
+	x=binary_gradient(img)
+	combined=np.zeros_like(s)
+	combined[((w==1)|(s==1)&(x==1))]=255
 
 	#cv2.imwrite('../output_images/binary_result.jpg', combined)
 	return combined
 
+
+def show(img):
+	
+	plt.imshow(img)
+	plt.show()
+	return 0
+
+
+
 if __name__ == '__main__':
-	img=mpimg.imread('../test_images/straight_lines2.jpg')
-	binary_combined(img)	
+	#img=mpimg.imread("../fail/t8.png")   ../test_images/test2.jpg      ../fail/t8.png
+	img=cv2.imread("../test_images/test6.jpg")
+	img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+	show(img)
+	out=binary_combined(img)
+	show(out)
 	
 
-'''
+	white_binary=rgb_white(img)
+	show(white_binary)
+	s_binary=binary_s_channel(img)
+	show(s_binary)
+	sxbinary=binary_gradient(img)
+	show(sxbinary)
+	
+	'''
 	hls = cv2.cvtColor(img, cv2.COLOR_RGB2HLS)
 	s_channel = hls[:,:,2]
 	eq = cv2.equalizeHist(s_channel)
-	cv2.imwrite('../output_images/s_channel.jpg', eq)
-'''		
+	show(eq)
+	'''
 
 

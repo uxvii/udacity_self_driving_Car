@@ -3,6 +3,7 @@ import cv2
 import glob
 import matplotlib.pyplot as plt
 import pickle
+import matplotlib.image as mpimg
 
 def camera_calibration():
 	# prepare object points, like (0,0,0), (1,0,0), (2,0,0) ....,(8,5,0)
@@ -66,7 +67,7 @@ def undistortion(img):
 
 if __name__ == '__main__':
 
-    img = cv2.imread('../test_images/test2.jpg')
+    img = cv2.imread('../test_images/test1.jpg')
     
     img_undistorted = undistortion(img)
 
